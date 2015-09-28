@@ -1,0 +1,1013 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D696299318BC49B60004C7D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D696299218BC49B60004C7D2 /* Foundation.framework */; };
+		D696299518BC49B60004C7D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D696299418BC49B60004C7D2 /* CoreGraphics.framework */; };
+		D696299718BC49B60004C7D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D696299618BC49B60004C7D2 /* UIKit.framework */; };
+		D696299D18BC49B60004C7D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D696299B18BC49B60004C7D2 /* InfoPlist.strings */; };
+		D696299F18BC49B60004C7D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D696299E18BC49B60004C7D2 /* main.m */; };
+		D69629A318BC49B60004C7D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D69629A218BC49B60004C7D2 /* AppDelegate.m */; };
+		D69629A618BC49B60004C7D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D69629A418BC49B60004C7D2 /* Main.storyboard */; };
+		D69629A918BC49B60004C7D2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69629A818BC49B60004C7D2 /* ViewController.m */; };
+		D69629AB18BC49B60004C7D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D69629AA18BC49B60004C7D2 /* Images.xcassets */; };
+		D69629B218BC49B70004C7D2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69629B118BC49B70004C7D2 /* XCTest.framework */; };
+		D69629B318BC49B70004C7D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D696299218BC49B60004C7D2 /* Foundation.framework */; };
+		D69629B418BC49B70004C7D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D696299618BC49B60004C7D2 /* UIKit.framework */; };
+		D69629BC18BC49B70004C7D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D69629BA18BC49B70004C7D2 /* InfoPlist.strings */; };
+		D69629BE18BC49B70004C7D2 /* CollectionViewOverlflowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D69629BD18BC49B70004C7D2 /* CollectionViewOverlflowTests.m */; };
+		D697A1EE18BC58C200534619 /* ShelfCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D697A1ED18BC58C200534619 /* ShelfCollectionViewCell.m */; };
+		D697A1F118BC5AE800534619 /* CustomLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D697A1F018BC5AE800534619 /* CustomLayout.m */; };
+		D697A20D18BC5C7600534619 /* open_shelf_new.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A20C18BC5C7600534619 /* open_shelf_new.png */; };
+		D697A21318BC69DE00534619 /* StoreBook.m in Sources */ = {isa = PBXBuildFile; fileRef = D697A21218BC69DE00534619 /* StoreBook.m */; };
+		D697A28F18BC6C1C00534619 /* Aaron Douglas.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A21418BC6C1B00534619 /* Aaron Douglas.png */; };
+		D697A29018BC6C1C00534619 /* Aaron Hillegass.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A21518BC6C1B00534619 /* Aaron Hillegass.png */; };
+		D697A29118BC6C1C00534619 /* Aged-Paper.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A21618BC6C1B00534619 /* Aged-Paper.png */; };
+		D697A29218BC6C1C00534619 /* Aged-Paper@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A21718BC6C1B00534619 /* Aged-Paper@2x.png */; };
+		D697A29318BC6C1C00534619 /* Ameir Al-Zoubi.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A21818BC6C1B00534619 /* Ameir Al-Zoubi.png */; };
+		D697A29418BC6C1C00534619 /* Ameir Al-Zoubi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A21918BC6C1B00534619 /* Ameir Al-Zoubi@2x.png */; };
+		D697A29518BC6C1C00534619 /* Andria Jensen.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A21A18BC6C1B00534619 /* Andria Jensen.png */; };
+		D697A29618BC6C1C00534619 /* Andy Hunt.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A21B18BC6C1B00534619 /* Andy Hunt.png */; };
+		D697A29718BC6C1C00534619 /* Apple-Wood.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A21C18BC6C1B00534619 /* Apple-Wood.png */; };
+		D697A29818BC6C1D00534619 /* Apple-Wood@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A21D18BC6C1B00534619 /* Apple-Wood@2x.png */; };
+		D697A29918BC6C1D00534619 /* Ben Lachman.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A21E18BC6C1B00534619 /* Ben Lachman.png */; };
+		D697A29A18BC6C1D00534619 /* Ben Scheirman.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A21F18BC6C1B00534619 /* Ben Scheirman.png */; };
+		D697A29B18BC6C1D00534619 /* Bill Dudney.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A22018BC6C1B00534619 /* Bill Dudney.png */; };
+		D697A29C18BC6C1D00534619 /* Bill Dudney@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A22118BC6C1B00534619 /* Bill Dudney@2x.png */; };
+		D697A29D18BC6C1D00534619 /* Bob McCune.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A22218BC6C1B00534619 /* Bob McCune.png */; };
+		D697A29E18BC6C1D00534619 /* Bob McCune@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A22318BC6C1B00534619 /* Bob McCune@2x.png */; };
+		D697A29F18BC6C1D00534619 /* Boisy Pitre.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A22418BC6C1B00534619 /* Boisy Pitre.png */; };
+		D697A2A018BC6C1D00534619 /* Brad Larson.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A22518BC6C1B00534619 /* Brad Larson.png */; };
+		D697A2A118BC6C1D00534619 /* Brandon Alexander.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A22618BC6C1B00534619 /* Brandon Alexander.png */; };
+		D697A2A218BC6C1D00534619 /* Brent Simmons.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A22718BC6C1B00534619 /* Brent Simmons.png */; };
+		D697A2A318BC6C1D00534619 /* Brent Simmons@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A22818BC6C1B00534619 /* Brent Simmons@2x.png */; };
+		D697A2A418BC6C1D00534619 /* Brian Coyner.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A22918BC6C1B00534619 /* Brian Coyner.png */; };
+		D697A2A518BC6C1D00534619 /* Brittany Tarvin.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A22A18BC6C1B00534619 /* Brittany Tarvin.png */; };
+		D697A2A618BC6C1D00534619 /* Cesare Rocchi.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A22B18BC6C1B00534619 /* Cesare Rocchi.png */; };
+		D697A2A718BC6C1D00534619 /* Cesare Rocchi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A22C18BC6C1B00534619 /* Cesare Rocchi@2x.png */; };
+		D697A2A818BC6C1D00534619 /* Chad Sellers.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A22D18BC6C1B00534619 /* Chad Sellers.png */; };
+		D697A2A918BC6C1D00534619 /* Chad Sellers@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A22E18BC6C1B00534619 /* Chad Sellers@2x.png */; };
+		D697A2AA18BC6C1D00534619 /* Charles Perry.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A22F18BC6C1B00534619 /* Charles Perry.png */; };
+		D697A2AB18BC6C1D00534619 /* Chris Adamson.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A23018BC6C1B00534619 /* Chris Adamson.png */; };
+		D697A2AC18BC6C1D00534619 /* Chris Judd.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A23118BC6C1B00534619 /* Chris Judd.png */; };
+		D697A2AD18BC6C1D00534619 /* Chris Risner.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A23218BC6C1B00534619 /* Chris Risner.png */; };
+		D697A2AE18BC6C1D00534619 /* Collin Donnell.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A23318BC6C1B00534619 /* Collin Donnell.png */; };
+		D697A2AF18BC6C1D00534619 /* Conrad Stoll.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A23418BC6C1B00534619 /* Conrad Stoll.png */; };
+		D697A2B018BC6C1D00534619 /* Conrad Stoll@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A23518BC6C1B00534619 /* Conrad Stoll@2x.png */; };
+		D697A2B118BC6C1D00534619 /* Craig Castelaz.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A23618BC6C1B00534619 /* Craig Castelaz.png */; };
+		D697A2B218BC6C1D00534619 /* Daniel Pasco.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A23718BC6C1B00534619 /* Daniel Pasco.png */; };
+		D697A2B318BC6C1D00534619 /* Daniel Pasco@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A23818BC6C1B00534619 /* Daniel Pasco@2x.png */; };
+		D697A2B418BC6C1D00534619 /* Daniel Steinberg.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A23918BC6C1B00534619 /* Daniel Steinberg.png */; };
+		D697A2B518BC6C1D00534619 /* Dave Koziol.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A23A18BC6C1B00534619 /* Dave Koziol.png */; };
+		D697A2B618BC6C1D00534619 /* David Smith.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A23B18BC6C1B00534619 /* David Smith.png */; };
+		D697A2B718BC6C1D00534619 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A23C18BC6C1B00534619 /* Default-568h@2x.png */; };
+		D697A2B818BC6C1D00534619 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A23D18BC6C1B00534619 /* Default.png */; };
+		D697A2B918BC6C1D00534619 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A23E18BC6C1B00534619 /* Default@2x.png */; };
+		D697A2BA18BC6C1D00534619 /* Doug Sjoquist.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A23F18BC6C1B00534619 /* Doug Sjoquist.png */; };
+		D697A2BB18BC6C1D00534619 /* Elizabeth Taylor.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A24018BC6C1B00534619 /* Elizabeth Taylor.png */; };
+		D697A2BC18BC6C1D00534619 /* Eric Meyer.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A24118BC6C1B00534619 /* Eric Meyer.png */; };
+		D697A2BD18BC6C1D00534619 /* Geoff Goetz.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A24218BC6C1B00534619 /* Geoff Goetz.png */; };
+		D697A2BE18BC6C1D00534619 /* Heath Borders.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A24318BC6C1B00534619 /* Heath Borders.png */; };
+		D697A2BF18BC6C1D00534619 /* Jack Cox.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A24418BC6C1B00534619 /* Jack Cox.png */; };
+		D697A2C018BC6C1D00534619 /* Jaimee Newberry.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A24518BC6C1B00534619 /* Jaimee Newberry.png */; };
+		D697A2C118BC6C1D00534619 /* Jaimee Newberry@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A24618BC6C1B00534619 /* Jaimee Newberry@2x.png */; };
+		D697A2C218BC6C1D00534619 /* James Dempsey.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A24718BC6C1C00534619 /* James Dempsey.png */; };
+		D697A2C318BC6C1D00534619 /* James Dempsey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A24818BC6C1C00534619 /* James Dempsey@2x.png */; };
+		D697A2C418BC6C1D00534619 /* Janine Ohmer.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A24918BC6C1C00534619 /* Janine Ohmer.png */; };
+		D697A2C518BC6C1D00534619 /* Jared Richardson.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A24A18BC6C1C00534619 /* Jared Richardson.png */; };
+		D697A2C618BC6C1D00534619 /* Jason Felice.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A24B18BC6C1C00534619 /* Jason Felice.png */; };
+		D697A2C718BC6C1D00534619 /* Jason Hunter.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A24C18BC6C1C00534619 /* Jason Hunter.png */; };
+		D697A2C818BC6C1D00534619 /* Jay Thrash.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A24D18BC6C1C00534619 /* Jay Thrash.png */; };
+		D697A2C918BC6C1D00534619 /* Jeff Biggus.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A24E18BC6C1C00534619 /* Jeff Biggus.png */; };
+		D697A2CA18BC6C1D00534619 /* Jeff Kelley.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A24F18BC6C1C00534619 /* Jeff Kelley.png */; };
+		D697A2CB18BC6C1D00534619 /* Jeff LaMarche.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A25018BC6C1C00534619 /* Jeff LaMarche.png */; };
+		D697A2CC18BC6C1D00534619 /* Jonathan Blocksom.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A25118BC6C1C00534619 /* Jonathan Blocksom.png */; };
+		D697A2CD18BC6C1D00534619 /* Jonathan Lehr.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A25218BC6C1C00534619 /* Jonathan Lehr.png */; };
+		D697A2CE18BC6C1D00534619 /* Jonathan Penn.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A25318BC6C1C00534619 /* Jonathan Penn.png */; };
+		D697A2CF18BC6C1D00534619 /* Jonathan Saggau.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A25418BC6C1C00534619 /* Jonathan Saggau.png */; };
+		D697A2D018BC6C1D00534619 /* Josh Abernathy.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A25518BC6C1C00534619 /* Josh Abernathy.png */; };
+		D697A2D118BC6C1D00534619 /* Josh Abernathy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A25618BC6C1C00534619 /* Josh Abernathy@2x.png */; };
+		D697A2D218BC6C1D00534619 /* Josh Johnson.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A25718BC6C1C00534619 /* Josh Johnson.png */; };
+		D697A2D318BC6C1D00534619 /* Josh Nozzi.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A25818BC6C1C00534619 /* Josh Nozzi.png */; };
+		D697A2D418BC6C1D00534619 /* Josh Smith.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A25918BC6C1C00534619 /* Josh Smith.png */; };
+		D697A2D518BC6C1D00534619 /* Josh Twist.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A25A18BC6C1C00534619 /* Josh Twist.png */; };
+		D697A2D618BC6C1D00534619 /* Justin Miller.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A25B18BC6C1C00534619 /* Justin Miller.png */; };
+		D697A2D718BC6C1D00534619 /* Justin Miller@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A25C18BC6C1C00534619 /* Justin Miller@2x.png */; };
+		D697A2D818BC6C1D00534619 /* Ken Auer.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A25D18BC6C1C00534619 /* Ken Auer.png */; };
+		D697A2D918BC6C1D00534619 /* Ken Auer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A25E18BC6C1C00534619 /* Ken Auer@2x.png */; };
+		D697A2DA18BC6C1D00534619 /* Kevin Conner.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A25F18BC6C1C00534619 /* Kevin Conner.png */; };
+		D697A2DB18BC6C1D00534619 /* Kevin Harwood.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A26018BC6C1C00534619 /* Kevin Harwood.png */; };
+		D697A2DC18BC6C1D00534619 /* Kevin Harwood@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A26118BC6C1C00534619 /* Kevin Harwood@2x.png */; };
+		D697A2DD18BC6C1D00534619 /* Kevin Kim.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A26218BC6C1C00534619 /* Kevin Kim.png */; };
+		D697A2DE18BC6C1D00534619 /* Kevin Munc.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A26318BC6C1C00534619 /* Kevin Munc.png */; };
+		D697A2DF18BC6C1D00534619 /* Kyle Richter.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A26418BC6C1C00534619 /* Kyle Richter.png */; };
+		D697A2E018BC6C1D00534619 /* Kyle Richter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A26518BC6C1C00534619 /* Kyle Richter@2x.png */; };
+		D697A2E118BC6C1D00534619 /* Mac Liaw.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A26618BC6C1C00534619 /* Mac Liaw.png */; };
+		D697A2E218BC6C1D00534619 /* Manton Reece.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A26718BC6C1C00534619 /* Manton Reece.png */; };
+		D697A2E318BC6C1D00534619 /* Manton Reece@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A26818BC6C1C00534619 /* Manton Reece@2x.png */; };
+		D697A2E418BC6C1D00534619 /* Marcus Zarra.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A26918BC6C1C00534619 /* Marcus Zarra.png */; };
+		D697A2E518BC6C1D00534619 /* Marcus Zarra@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A26A18BC6C1C00534619 /* Marcus Zarra@2x.png */; };
+		D697A2E618BC6C1D00534619 /* Mark Dalrymple.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A26B18BC6C1C00534619 /* Mark Dalrymple.png */; };
+		D697A2E718BC6C1D00534619 /* Mark Gilicinski.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A26C18BC6C1C00534619 /* Mark Gilicinski.png */; };
+		D697A2E818BC6C1D00534619 /* Mark Pospesel.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A26D18BC6C1C00534619 /* Mark Pospesel.png */; };
+		D697A2E918BC6C1D00534619 /* Mark Pospesel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A26E18BC6C1C00534619 /* Mark Pospesel@2x.png */; };
+		D697A2EA18BC6C1D00534619 /* Matt Drance.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A26F18BC6C1C00534619 /* Matt Drance.png */; };
+		D697A2EB18BC6C1D00534619 /* Matt Drance@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A27018BC6C1C00534619 /* Matt Drance@2x.png */; };
+		D697A2EC18BC6C1D00534619 /* Mattieu Gamache-Asselin.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A27118BC6C1C00534619 /* Mattieu Gamache-Asselin.png */; };
+		D697A2ED18BC6C1D00534619 /* Mattt Thompson.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A27218BC6C1C00534619 /* Mattt Thompson.png */; };
+		D697A2EE18BC6C1D00534619 /* Michael Simmons.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A27318BC6C1C00534619 /* Michael Simmons.png */; };
+		D697A2EF18BC6C1D00534619 /* Michael Simmons@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A27418BC6C1C00534619 /* Michael Simmons@2x.png */; };
+		D697A2F018BC6C1D00534619 /* Michele Titolo.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A27518BC6C1C00534619 /* Michele Titolo.png */; };
+		D697A2F118BC6C1D00534619 /* Michele Titolo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A27618BC6C1C00534619 /* Michele Titolo@2x.png */; };
+		D697A2F218BC6C1D00534619 /* Mike Ash.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A27718BC6C1C00534619 /* Mike Ash.png */; };
+		D697A2F318BC6C1D00534619 /* Nathan Eror.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A27818BC6C1C00534619 /* Nathan Eror.png */; };
+		D697A2F418BC6C1D00534619 /* Patrick Burleson.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A27918BC6C1C00534619 /* Patrick Burleson.png */; };
+		D697A2F518BC6C1D00534619 /* Pete Hodgson.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A27A18BC6C1C00534619 /* Pete Hodgson.png */; };
+		D697A2F618BC6C1D00534619 /* Peter Kananen.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A27B18BC6C1C00534619 /* Peter Kananen.png */; };
+		D697A2F718BC6C1D00534619 /* Randy Beiter.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A27C18BC6C1C00534619 /* Randy Beiter.png */; };
+		D697A2F818BC6C1D00534619 /* Ray Wenderlich.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A27D18BC6C1C00534619 /* Ray Wenderlich.png */; };
+		D697A2F918BC6C1D00534619 /* Rene Cacheaux.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A27E18BC6C1C00534619 /* Rene Cacheaux.png */; };
+		D697A2FA18BC6C1D00534619 /* Rene Cacheaux@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A27F18BC6C1C00534619 /* Rene Cacheaux@2x.png */; };
+		D697A2FB18BC6C1D00534619 /* Rob Napier.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A28018BC6C1C00534619 /* Rob Napier.png */; };
+		D697A2FC18BC6C1D00534619 /* Rob Napier@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A28118BC6C1C00534619 /* Rob Napier@2x.png */; };
+		D697A2FD18BC6C1D00534619 /* Saul Mora.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A28218BC6C1C00534619 /* Saul Mora.png */; };
+		D697A2FE18BC6C1D00534619 /* Scott McAlister.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A28318BC6C1C00534619 /* Scott McAlister.png */; };
+		D697A2FF18BC6C1D00534619 /* Scott McAlister@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A28418BC6C1C00534619 /* Scott McAlister@2x.png */; };
+		D697A30018BC6C1D00534619 /* Sean McMains.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A28518BC6C1C00534619 /* Sean McMains.png */; };
+		D697A30118BC6C1D00534619 /* Sean McMains@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A28618BC6C1C00534619 /* Sean McMains@2x.png */; };
+		D697A30218BC6C1D00534619 /* Step Christopher.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A28718BC6C1C00534619 /* Step Christopher.png */; };
+		D697A30318BC6C1D00534619 /* Steve Madsen.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A28818BC6C1C00534619 /* Steve Madsen.png */; };
+		D697A30418BC6C1D00534619 /* Tim Burks.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A28918BC6C1C00534619 /* Tim Burks.png */; };
+		D697A30518BC6C1D00534619 /* TJ Usiyan.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A28A18BC6C1C00534619 /* TJ Usiyan.png */; };
+		D697A30618BC6C1D00534619 /* Walter Tyree.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A28B18BC6C1C00534619 /* Walter Tyree.png */; };
+		D697A30718BC6C1D00534619 /* Whitney Young.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A28C18BC6C1C00534619 /* Whitney Young.png */; };
+		D697A30818BC6C1D00534619 /* Wood-Planks.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A28D18BC6C1C00534619 /* Wood-Planks.png */; };
+		D697A30918BC6C1D00534619 /* Wood-Planks@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A28E18BC6C1C00534619 /* Wood-Planks@2x.png */; };
+		D697A32518BC6D1300534619 /* open_shelf_new@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D697A32418BC6D1300534619 /* open_shelf_new@2x.png */; };
+		D697A32918BC72F000534619 /* LXReorderableCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D697A32818BC72F000534619 /* LXReorderableCollectionViewFlowLayout.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D69629B518BC49B70004C7D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D696298718BC49B60004C7D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D696298E18BC49B60004C7D2;
+			remoteInfo = CollectionViewOverlflow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D696298F18BC49B60004C7D2 /* CollectionViewOverlflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewOverlflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D696299218BC49B60004C7D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D696299418BC49B60004C7D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D696299618BC49B60004C7D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D696299A18BC49B60004C7D2 /* CollectionViewOverlflow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CollectionViewOverlflow-Info.plist"; sourceTree = "<group>"; };
+		D696299C18BC49B60004C7D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D696299E18BC49B60004C7D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D69629A018BC49B60004C7D2 /* CollectionViewOverlflow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CollectionViewOverlflow-Prefix.pch"; sourceTree = "<group>"; };
+		D69629A118BC49B60004C7D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D69629A218BC49B60004C7D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D69629A518BC49B60004C7D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D69629A718BC49B60004C7D2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D69629A818BC49B60004C7D2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D69629AA18BC49B60004C7D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D69629B018BC49B70004C7D2 /* CollectionViewOverlflowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewOverlflowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D69629B118BC49B70004C7D2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D69629B918BC49B70004C7D2 /* CollectionViewOverlflowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CollectionViewOverlflowTests-Info.plist"; sourceTree = "<group>"; };
+		D69629BB18BC49B70004C7D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D69629BD18BC49B70004C7D2 /* CollectionViewOverlflowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewOverlflowTests.m; sourceTree = "<group>"; };
+		D697A1EC18BC58C200534619 /* ShelfCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShelfCollectionViewCell.h; sourceTree = "<group>"; };
+		D697A1ED18BC58C200534619 /* ShelfCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShelfCollectionViewCell.m; sourceTree = "<group>"; };
+		D697A1EF18BC5AE800534619 /* CustomLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLayout.h; sourceTree = "<group>"; };
+		D697A1F018BC5AE800534619 /* CustomLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLayout.m; sourceTree = "<group>"; };
+		D697A20C18BC5C7600534619 /* open_shelf_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = open_shelf_new.png; sourceTree = "<group>"; };
+		D697A21118BC69DE00534619 /* StoreBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreBook.h; sourceTree = "<group>"; };
+		D697A21218BC69DE00534619 /* StoreBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreBook.m; sourceTree = "<group>"; };
+		D697A21418BC6C1B00534619 /* Aaron Douglas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Aaron Douglas.png"; sourceTree = "<group>"; };
+		D697A21518BC6C1B00534619 /* Aaron Hillegass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Aaron Hillegass.png"; sourceTree = "<group>"; };
+		D697A21618BC6C1B00534619 /* Aged-Paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Aged-Paper.png"; sourceTree = "<group>"; };
+		D697A21718BC6C1B00534619 /* Aged-Paper@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Aged-Paper@2x.png"; sourceTree = "<group>"; };
+		D697A21818BC6C1B00534619 /* Ameir Al-Zoubi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ameir Al-Zoubi.png"; sourceTree = "<group>"; };
+		D697A21918BC6C1B00534619 /* Ameir Al-Zoubi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ameir Al-Zoubi@2x.png"; sourceTree = "<group>"; };
+		D697A21A18BC6C1B00534619 /* Andria Jensen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Andria Jensen.png"; sourceTree = "<group>"; };
+		D697A21B18BC6C1B00534619 /* Andy Hunt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Andy Hunt.png"; sourceTree = "<group>"; };
+		D697A21C18BC6C1B00534619 /* Apple-Wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple-Wood.png"; sourceTree = "<group>"; };
+		D697A21D18BC6C1B00534619 /* Apple-Wood@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Apple-Wood@2x.png"; sourceTree = "<group>"; };
+		D697A21E18BC6C1B00534619 /* Ben Lachman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ben Lachman.png"; sourceTree = "<group>"; };
+		D697A21F18BC6C1B00534619 /* Ben Scheirman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ben Scheirman.png"; sourceTree = "<group>"; };
+		D697A22018BC6C1B00534619 /* Bill Dudney.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bill Dudney.png"; sourceTree = "<group>"; };
+		D697A22118BC6C1B00534619 /* Bill Dudney@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bill Dudney@2x.png"; sourceTree = "<group>"; };
+		D697A22218BC6C1B00534619 /* Bob McCune.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bob McCune.png"; sourceTree = "<group>"; };
+		D697A22318BC6C1B00534619 /* Bob McCune@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bob McCune@2x.png"; sourceTree = "<group>"; };
+		D697A22418BC6C1B00534619 /* Boisy Pitre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Boisy Pitre.png"; sourceTree = "<group>"; };
+		D697A22518BC6C1B00534619 /* Brad Larson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brad Larson.png"; sourceTree = "<group>"; };
+		D697A22618BC6C1B00534619 /* Brandon Alexander.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brandon Alexander.png"; sourceTree = "<group>"; };
+		D697A22718BC6C1B00534619 /* Brent Simmons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brent Simmons.png"; sourceTree = "<group>"; };
+		D697A22818BC6C1B00534619 /* Brent Simmons@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brent Simmons@2x.png"; sourceTree = "<group>"; };
+		D697A22918BC6C1B00534619 /* Brian Coyner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brian Coyner.png"; sourceTree = "<group>"; };
+		D697A22A18BC6C1B00534619 /* Brittany Tarvin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brittany Tarvin.png"; sourceTree = "<group>"; };
+		D697A22B18BC6C1B00534619 /* Cesare Rocchi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cesare Rocchi.png"; sourceTree = "<group>"; };
+		D697A22C18BC6C1B00534619 /* Cesare Rocchi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cesare Rocchi@2x.png"; sourceTree = "<group>"; };
+		D697A22D18BC6C1B00534619 /* Chad Sellers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chad Sellers.png"; sourceTree = "<group>"; };
+		D697A22E18BC6C1B00534619 /* Chad Sellers@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chad Sellers@2x.png"; sourceTree = "<group>"; };
+		D697A22F18BC6C1B00534619 /* Charles Perry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Charles Perry.png"; sourceTree = "<group>"; };
+		D697A23018BC6C1B00534619 /* Chris Adamson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chris Adamson.png"; sourceTree = "<group>"; };
+		D697A23118BC6C1B00534619 /* Chris Judd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chris Judd.png"; sourceTree = "<group>"; };
+		D697A23218BC6C1B00534619 /* Chris Risner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chris Risner.png"; sourceTree = "<group>"; };
+		D697A23318BC6C1B00534619 /* Collin Donnell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Collin Donnell.png"; sourceTree = "<group>"; };
+		D697A23418BC6C1B00534619 /* Conrad Stoll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Conrad Stoll.png"; sourceTree = "<group>"; };
+		D697A23518BC6C1B00534619 /* Conrad Stoll@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Conrad Stoll@2x.png"; sourceTree = "<group>"; };
+		D697A23618BC6C1B00534619 /* Craig Castelaz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Craig Castelaz.png"; sourceTree = "<group>"; };
+		D697A23718BC6C1B00534619 /* Daniel Pasco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Daniel Pasco.png"; sourceTree = "<group>"; };
+		D697A23818BC6C1B00534619 /* Daniel Pasco@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Daniel Pasco@2x.png"; sourceTree = "<group>"; };
+		D697A23918BC6C1B00534619 /* Daniel Steinberg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Daniel Steinberg.png"; sourceTree = "<group>"; };
+		D697A23A18BC6C1B00534619 /* Dave Koziol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dave Koziol.png"; sourceTree = "<group>"; };
+		D697A23B18BC6C1B00534619 /* David Smith.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "David Smith.png"; sourceTree = "<group>"; };
+		D697A23C18BC6C1B00534619 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D697A23D18BC6C1B00534619 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D697A23E18BC6C1B00534619 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D697A23F18BC6C1B00534619 /* Doug Sjoquist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Doug Sjoquist.png"; sourceTree = "<group>"; };
+		D697A24018BC6C1B00534619 /* Elizabeth Taylor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Elizabeth Taylor.png"; sourceTree = "<group>"; };
+		D697A24118BC6C1B00534619 /* Eric Meyer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Eric Meyer.png"; sourceTree = "<group>"; };
+		D697A24218BC6C1B00534619 /* Geoff Goetz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Geoff Goetz.png"; sourceTree = "<group>"; };
+		D697A24318BC6C1B00534619 /* Heath Borders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Heath Borders.png"; sourceTree = "<group>"; };
+		D697A24418BC6C1B00534619 /* Jack Cox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jack Cox.png"; sourceTree = "<group>"; };
+		D697A24518BC6C1B00534619 /* Jaimee Newberry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jaimee Newberry.png"; sourceTree = "<group>"; };
+		D697A24618BC6C1B00534619 /* Jaimee Newberry@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jaimee Newberry@2x.png"; sourceTree = "<group>"; };
+		D697A24718BC6C1C00534619 /* James Dempsey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "James Dempsey.png"; sourceTree = "<group>"; };
+		D697A24818BC6C1C00534619 /* James Dempsey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "James Dempsey@2x.png"; sourceTree = "<group>"; };
+		D697A24918BC6C1C00534619 /* Janine Ohmer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Janine Ohmer.png"; sourceTree = "<group>"; };
+		D697A24A18BC6C1C00534619 /* Jared Richardson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jared Richardson.png"; sourceTree = "<group>"; };
+		D697A24B18BC6C1C00534619 /* Jason Felice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jason Felice.png"; sourceTree = "<group>"; };
+		D697A24C18BC6C1C00534619 /* Jason Hunter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jason Hunter.png"; sourceTree = "<group>"; };
+		D697A24D18BC6C1C00534619 /* Jay Thrash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jay Thrash.png"; sourceTree = "<group>"; };
+		D697A24E18BC6C1C00534619 /* Jeff Biggus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jeff Biggus.png"; sourceTree = "<group>"; };
+		D697A24F18BC6C1C00534619 /* Jeff Kelley.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jeff Kelley.png"; sourceTree = "<group>"; };
+		D697A25018BC6C1C00534619 /* Jeff LaMarche.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jeff LaMarche.png"; sourceTree = "<group>"; };
+		D697A25118BC6C1C00534619 /* Jonathan Blocksom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jonathan Blocksom.png"; sourceTree = "<group>"; };
+		D697A25218BC6C1C00534619 /* Jonathan Lehr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jonathan Lehr.png"; sourceTree = "<group>"; };
+		D697A25318BC6C1C00534619 /* Jonathan Penn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jonathan Penn.png"; sourceTree = "<group>"; };
+		D697A25418BC6C1C00534619 /* Jonathan Saggau.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Jonathan Saggau.png"; sourceTree = "<group>"; };
+		D697A25518BC6C1C00534619 /* Josh Abernathy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Josh Abernathy.png"; sourceTree = "<group>"; };
+		D697A25618BC6C1C00534619 /* Josh Abernathy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Josh Abernathy@2x.png"; sourceTree = "<group>"; };
+		D697A25718BC6C1C00534619 /* Josh Johnson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Josh Johnson.png"; sourceTree = "<group>"; };
+		D697A25818BC6C1C00534619 /* Josh Nozzi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Josh Nozzi.png"; sourceTree = "<group>"; };
+		D697A25918BC6C1C00534619 /* Josh Smith.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Josh Smith.png"; sourceTree = "<group>"; };
+		D697A25A18BC6C1C00534619 /* Josh Twist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Josh Twist.png"; sourceTree = "<group>"; };
+		D697A25B18BC6C1C00534619 /* Justin Miller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Justin Miller.png"; sourceTree = "<group>"; };
+		D697A25C18BC6C1C00534619 /* Justin Miller@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Justin Miller@2x.png"; sourceTree = "<group>"; };
+		D697A25D18BC6C1C00534619 /* Ken Auer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ken Auer.png"; sourceTree = "<group>"; };
+		D697A25E18BC6C1C00534619 /* Ken Auer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ken Auer@2x.png"; sourceTree = "<group>"; };
+		D697A25F18BC6C1C00534619 /* Kevin Conner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kevin Conner.png"; sourceTree = "<group>"; };
+		D697A26018BC6C1C00534619 /* Kevin Harwood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kevin Harwood.png"; sourceTree = "<group>"; };
+		D697A26118BC6C1C00534619 /* Kevin Harwood@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kevin Harwood@2x.png"; sourceTree = "<group>"; };
+		D697A26218BC6C1C00534619 /* Kevin Kim.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kevin Kim.png"; sourceTree = "<group>"; };
+		D697A26318BC6C1C00534619 /* Kevin Munc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kevin Munc.png"; sourceTree = "<group>"; };
+		D697A26418BC6C1C00534619 /* Kyle Richter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kyle Richter.png"; sourceTree = "<group>"; };
+		D697A26518BC6C1C00534619 /* Kyle Richter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Kyle Richter@2x.png"; sourceTree = "<group>"; };
+		D697A26618BC6C1C00534619 /* Mac Liaw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mac Liaw.png"; sourceTree = "<group>"; };
+		D697A26718BC6C1C00534619 /* Manton Reece.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Manton Reece.png"; sourceTree = "<group>"; };
+		D697A26818BC6C1C00534619 /* Manton Reece@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Manton Reece@2x.png"; sourceTree = "<group>"; };
+		D697A26918BC6C1C00534619 /* Marcus Zarra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Marcus Zarra.png"; sourceTree = "<group>"; };
+		D697A26A18BC6C1C00534619 /* Marcus Zarra@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Marcus Zarra@2x.png"; sourceTree = "<group>"; };
+		D697A26B18BC6C1C00534619 /* Mark Dalrymple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mark Dalrymple.png"; sourceTree = "<group>"; };
+		D697A26C18BC6C1C00534619 /* Mark Gilicinski.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mark Gilicinski.png"; sourceTree = "<group>"; };
+		D697A26D18BC6C1C00534619 /* Mark Pospesel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mark Pospesel.png"; sourceTree = "<group>"; };
+		D697A26E18BC6C1C00534619 /* Mark Pospesel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mark Pospesel@2x.png"; sourceTree = "<group>"; };
+		D697A26F18BC6C1C00534619 /* Matt Drance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt Drance.png"; sourceTree = "<group>"; };
+		D697A27018BC6C1C00534619 /* Matt Drance@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Matt Drance@2x.png"; sourceTree = "<group>"; };
+		D697A27118BC6C1C00534619 /* Mattieu Gamache-Asselin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mattieu Gamache-Asselin.png"; sourceTree = "<group>"; };
+		D697A27218BC6C1C00534619 /* Mattt Thompson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mattt Thompson.png"; sourceTree = "<group>"; };
+		D697A27318BC6C1C00534619 /* Michael Simmons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Michael Simmons.png"; sourceTree = "<group>"; };
+		D697A27418BC6C1C00534619 /* Michael Simmons@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Michael Simmons@2x.png"; sourceTree = "<group>"; };
+		D697A27518BC6C1C00534619 /* Michele Titolo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Michele Titolo.png"; sourceTree = "<group>"; };
+		D697A27618BC6C1C00534619 /* Michele Titolo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Michele Titolo@2x.png"; sourceTree = "<group>"; };
+		D697A27718BC6C1C00534619 /* Mike Ash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mike Ash.png"; sourceTree = "<group>"; };
+		D697A27818BC6C1C00534619 /* Nathan Eror.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nathan Eror.png"; sourceTree = "<group>"; };
+		D697A27918BC6C1C00534619 /* Patrick Burleson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Patrick Burleson.png"; sourceTree = "<group>"; };
+		D697A27A18BC6C1C00534619 /* Pete Hodgson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pete Hodgson.png"; sourceTree = "<group>"; };
+		D697A27B18BC6C1C00534619 /* Peter Kananen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Peter Kananen.png"; sourceTree = "<group>"; };
+		D697A27C18BC6C1C00534619 /* Randy Beiter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Randy Beiter.png"; sourceTree = "<group>"; };
+		D697A27D18BC6C1C00534619 /* Ray Wenderlich.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ray Wenderlich.png"; sourceTree = "<group>"; };
+		D697A27E18BC6C1C00534619 /* Rene Cacheaux.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rene Cacheaux.png"; sourceTree = "<group>"; };
+		D697A27F18BC6C1C00534619 /* Rene Cacheaux@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rene Cacheaux@2x.png"; sourceTree = "<group>"; };
+		D697A28018BC6C1C00534619 /* Rob Napier.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rob Napier.png"; sourceTree = "<group>"; };
+		D697A28118BC6C1C00534619 /* Rob Napier@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rob Napier@2x.png"; sourceTree = "<group>"; };
+		D697A28218BC6C1C00534619 /* Saul Mora.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Saul Mora.png"; sourceTree = "<group>"; };
+		D697A28318BC6C1C00534619 /* Scott McAlister.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Scott McAlister.png"; sourceTree = "<group>"; };
+		D697A28418BC6C1C00534619 /* Scott McAlister@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Scott McAlister@2x.png"; sourceTree = "<group>"; };
+		D697A28518BC6C1C00534619 /* Sean McMains.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sean McMains.png"; sourceTree = "<group>"; };
+		D697A28618BC6C1C00534619 /* Sean McMains@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sean McMains@2x.png"; sourceTree = "<group>"; };
+		D697A28718BC6C1C00534619 /* Step Christopher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Step Christopher.png"; sourceTree = "<group>"; };
+		D697A28818BC6C1C00534619 /* Steve Madsen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Steve Madsen.png"; sourceTree = "<group>"; };
+		D697A28918BC6C1C00534619 /* Tim Burks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tim Burks.png"; sourceTree = "<group>"; };
+		D697A28A18BC6C1C00534619 /* TJ Usiyan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TJ Usiyan.png"; sourceTree = "<group>"; };
+		D697A28B18BC6C1C00534619 /* Walter Tyree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Walter Tyree.png"; sourceTree = "<group>"; };
+		D697A28C18BC6C1C00534619 /* Whitney Young.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Whitney Young.png"; sourceTree = "<group>"; };
+		D697A28D18BC6C1C00534619 /* Wood-Planks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wood-Planks.png"; sourceTree = "<group>"; };
+		D697A28E18BC6C1C00534619 /* Wood-Planks@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wood-Planks@2x.png"; sourceTree = "<group>"; };
+		D697A32418BC6D1300534619 /* open_shelf_new@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "open_shelf_new@2x.png"; sourceTree = "<group>"; };
+		D697A32718BC72F000534619 /* LXReorderableCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXReorderableCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		D697A32818BC72F000534619 /* LXReorderableCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXReorderableCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D696298C18BC49B60004C7D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D696299518BC49B60004C7D2 /* CoreGraphics.framework in Frameworks */,
+				D696299718BC49B60004C7D2 /* UIKit.framework in Frameworks */,
+				D696299318BC49B60004C7D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D69629AD18BC49B70004C7D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D69629B218BC49B70004C7D2 /* XCTest.framework in Frameworks */,
+				D69629B418BC49B70004C7D2 /* UIKit.framework in Frameworks */,
+				D69629B318BC49B70004C7D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D696298618BC49B50004C7D2 = {
+			isa = PBXGroup;
+			children = (
+				D697A32618BC704D00534619 /* Images */,
+				D696299818BC49B60004C7D2 /* CollectionViewOverlflow */,
+				D69629B718BC49B70004C7D2 /* CollectionViewOverlflowTests */,
+				D696299118BC49B60004C7D2 /* Frameworks */,
+				D696299018BC49B60004C7D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D696299018BC49B60004C7D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D696298F18BC49B60004C7D2 /* CollectionViewOverlflow.app */,
+				D69629B018BC49B70004C7D2 /* CollectionViewOverlflowTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D696299118BC49B60004C7D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D696299218BC49B60004C7D2 /* Foundation.framework */,
+				D696299418BC49B60004C7D2 /* CoreGraphics.framework */,
+				D696299618BC49B60004C7D2 /* UIKit.framework */,
+				D69629B118BC49B70004C7D2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D696299818BC49B60004C7D2 /* CollectionViewOverlflow */ = {
+			isa = PBXGroup;
+			children = (
+				D697A32718BC72F000534619 /* LXReorderableCollectionViewFlowLayout.h */,
+				D697A32818BC72F000534619 /* LXReorderableCollectionViewFlowLayout.m */,
+				D69629A118BC49B60004C7D2 /* AppDelegate.h */,
+				D69629A218BC49B60004C7D2 /* AppDelegate.m */,
+				D69629A418BC49B60004C7D2 /* Main.storyboard */,
+				D69629A718BC49B60004C7D2 /* ViewController.h */,
+				D69629A818BC49B60004C7D2 /* ViewController.m */,
+				D697A1EF18BC5AE800534619 /* CustomLayout.h */,
+				D697A1F018BC5AE800534619 /* CustomLayout.m */,
+				D697A1EC18BC58C200534619 /* ShelfCollectionViewCell.h */,
+				D697A1ED18BC58C200534619 /* ShelfCollectionViewCell.m */,
+				D69629AA18BC49B60004C7D2 /* Images.xcassets */,
+				D696299918BC49B60004C7D2 /* Supporting Files */,
+				D697A21118BC69DE00534619 /* StoreBook.h */,
+				D697A21218BC69DE00534619 /* StoreBook.m */,
+			);
+			path = CollectionViewOverlflow;
+			sourceTree = "<group>";
+		};
+		D696299918BC49B60004C7D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D696299A18BC49B60004C7D2 /* CollectionViewOverlflow-Info.plist */,
+				D696299B18BC49B60004C7D2 /* InfoPlist.strings */,
+				D696299E18BC49B60004C7D2 /* main.m */,
+				D69629A018BC49B60004C7D2 /* CollectionViewOverlflow-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D69629B718BC49B70004C7D2 /* CollectionViewOverlflowTests */ = {
+			isa = PBXGroup;
+			children = (
+				D69629BD18BC49B70004C7D2 /* CollectionViewOverlflowTests.m */,
+				D69629B818BC49B70004C7D2 /* Supporting Files */,
+			);
+			path = CollectionViewOverlflowTests;
+			sourceTree = "<group>";
+		};
+		D69629B818BC49B70004C7D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D69629B918BC49B70004C7D2 /* CollectionViewOverlflowTests-Info.plist */,
+				D69629BA18BC49B70004C7D2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D697A32618BC704D00534619 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D697A32418BC6D1300534619 /* open_shelf_new@2x.png */,
+				D697A21418BC6C1B00534619 /* Aaron Douglas.png */,
+				D697A21518BC6C1B00534619 /* Aaron Hillegass.png */,
+				D697A21618BC6C1B00534619 /* Aged-Paper.png */,
+				D697A21718BC6C1B00534619 /* Aged-Paper@2x.png */,
+				D697A21818BC6C1B00534619 /* Ameir Al-Zoubi.png */,
+				D697A21918BC6C1B00534619 /* Ameir Al-Zoubi@2x.png */,
+				D697A21A18BC6C1B00534619 /* Andria Jensen.png */,
+				D697A21B18BC6C1B00534619 /* Andy Hunt.png */,
+				D697A21C18BC6C1B00534619 /* Apple-Wood.png */,
+				D697A21D18BC6C1B00534619 /* Apple-Wood@2x.png */,
+				D697A21E18BC6C1B00534619 /* Ben Lachman.png */,
+				D697A21F18BC6C1B00534619 /* Ben Scheirman.png */,
+				D697A22018BC6C1B00534619 /* Bill Dudney.png */,
+				D697A22118BC6C1B00534619 /* Bill Dudney@2x.png */,
+				D697A22218BC6C1B00534619 /* Bob McCune.png */,
+				D697A22318BC6C1B00534619 /* Bob McCune@2x.png */,
+				D697A22418BC6C1B00534619 /* Boisy Pitre.png */,
+				D697A22518BC6C1B00534619 /* Brad Larson.png */,
+				D697A22618BC6C1B00534619 /* Brandon Alexander.png */,
+				D697A22718BC6C1B00534619 /* Brent Simmons.png */,
+				D697A22818BC6C1B00534619 /* Brent Simmons@2x.png */,
+				D697A22918BC6C1B00534619 /* Brian Coyner.png */,
+				D697A22A18BC6C1B00534619 /* Brittany Tarvin.png */,
+				D697A22B18BC6C1B00534619 /* Cesare Rocchi.png */,
+				D697A22C18BC6C1B00534619 /* Cesare Rocchi@2x.png */,
+				D697A22D18BC6C1B00534619 /* Chad Sellers.png */,
+				D697A22E18BC6C1B00534619 /* Chad Sellers@2x.png */,
+				D697A22F18BC6C1B00534619 /* Charles Perry.png */,
+				D697A23018BC6C1B00534619 /* Chris Adamson.png */,
+				D697A23118BC6C1B00534619 /* Chris Judd.png */,
+				D697A23218BC6C1B00534619 /* Chris Risner.png */,
+				D697A23318BC6C1B00534619 /* Collin Donnell.png */,
+				D697A23418BC6C1B00534619 /* Conrad Stoll.png */,
+				D697A23518BC6C1B00534619 /* Conrad Stoll@2x.png */,
+				D697A23618BC6C1B00534619 /* Craig Castelaz.png */,
+				D697A23718BC6C1B00534619 /* Daniel Pasco.png */,
+				D697A23818BC6C1B00534619 /* Daniel Pasco@2x.png */,
+				D697A23918BC6C1B00534619 /* Daniel Steinberg.png */,
+				D697A23A18BC6C1B00534619 /* Dave Koziol.png */,
+				D697A23B18BC6C1B00534619 /* David Smith.png */,
+				D697A23C18BC6C1B00534619 /* Default-568h@2x.png */,
+				D697A23D18BC6C1B00534619 /* Default.png */,
+				D697A23E18BC6C1B00534619 /* Default@2x.png */,
+				D697A23F18BC6C1B00534619 /* Doug Sjoquist.png */,
+				D697A24018BC6C1B00534619 /* Elizabeth Taylor.png */,
+				D697A24118BC6C1B00534619 /* Eric Meyer.png */,
+				D697A24218BC6C1B00534619 /* Geoff Goetz.png */,
+				D697A24318BC6C1B00534619 /* Heath Borders.png */,
+				D697A24418BC6C1B00534619 /* Jack Cox.png */,
+				D697A24518BC6C1B00534619 /* Jaimee Newberry.png */,
+				D697A24618BC6C1B00534619 /* Jaimee Newberry@2x.png */,
+				D697A24718BC6C1C00534619 /* James Dempsey.png */,
+				D697A24818BC6C1C00534619 /* James Dempsey@2x.png */,
+				D697A24918BC6C1C00534619 /* Janine Ohmer.png */,
+				D697A24A18BC6C1C00534619 /* Jared Richardson.png */,
+				D697A24B18BC6C1C00534619 /* Jason Felice.png */,
+				D697A24C18BC6C1C00534619 /* Jason Hunter.png */,
+				D697A24D18BC6C1C00534619 /* Jay Thrash.png */,
+				D697A24E18BC6C1C00534619 /* Jeff Biggus.png */,
+				D697A24F18BC6C1C00534619 /* Jeff Kelley.png */,
+				D697A25018BC6C1C00534619 /* Jeff LaMarche.png */,
+				D697A25118BC6C1C00534619 /* Jonathan Blocksom.png */,
+				D697A25218BC6C1C00534619 /* Jonathan Lehr.png */,
+				D697A25318BC6C1C00534619 /* Jonathan Penn.png */,
+				D697A25418BC6C1C00534619 /* Jonathan Saggau.png */,
+				D697A25518BC6C1C00534619 /* Josh Abernathy.png */,
+				D697A25618BC6C1C00534619 /* Josh Abernathy@2x.png */,
+				D697A25718BC6C1C00534619 /* Josh Johnson.png */,
+				D697A25818BC6C1C00534619 /* Josh Nozzi.png */,
+				D697A25918BC6C1C00534619 /* Josh Smith.png */,
+				D697A25A18BC6C1C00534619 /* Josh Twist.png */,
+				D697A25B18BC6C1C00534619 /* Justin Miller.png */,
+				D697A25C18BC6C1C00534619 /* Justin Miller@2x.png */,
+				D697A25D18BC6C1C00534619 /* Ken Auer.png */,
+				D697A25E18BC6C1C00534619 /* Ken Auer@2x.png */,
+				D697A25F18BC6C1C00534619 /* Kevin Conner.png */,
+				D697A26018BC6C1C00534619 /* Kevin Harwood.png */,
+				D697A26118BC6C1C00534619 /* Kevin Harwood@2x.png */,
+				D697A26218BC6C1C00534619 /* Kevin Kim.png */,
+				D697A26318BC6C1C00534619 /* Kevin Munc.png */,
+				D697A26418BC6C1C00534619 /* Kyle Richter.png */,
+				D697A26518BC6C1C00534619 /* Kyle Richter@2x.png */,
+				D697A26618BC6C1C00534619 /* Mac Liaw.png */,
+				D697A26718BC6C1C00534619 /* Manton Reece.png */,
+				D697A26818BC6C1C00534619 /* Manton Reece@2x.png */,
+				D697A26918BC6C1C00534619 /* Marcus Zarra.png */,
+				D697A26A18BC6C1C00534619 /* Marcus Zarra@2x.png */,
+				D697A26B18BC6C1C00534619 /* Mark Dalrymple.png */,
+				D697A26C18BC6C1C00534619 /* Mark Gilicinski.png */,
+				D697A26D18BC6C1C00534619 /* Mark Pospesel.png */,
+				D697A26E18BC6C1C00534619 /* Mark Pospesel@2x.png */,
+				D697A26F18BC6C1C00534619 /* Matt Drance.png */,
+				D697A27018BC6C1C00534619 /* Matt Drance@2x.png */,
+				D697A27118BC6C1C00534619 /* Mattieu Gamache-Asselin.png */,
+				D697A27218BC6C1C00534619 /* Mattt Thompson.png */,
+				D697A27318BC6C1C00534619 /* Michael Simmons.png */,
+				D697A27418BC6C1C00534619 /* Michael Simmons@2x.png */,
+				D697A27518BC6C1C00534619 /* Michele Titolo.png */,
+				D697A27618BC6C1C00534619 /* Michele Titolo@2x.png */,
+				D697A27718BC6C1C00534619 /* Mike Ash.png */,
+				D697A27818BC6C1C00534619 /* Nathan Eror.png */,
+				D697A27918BC6C1C00534619 /* Patrick Burleson.png */,
+				D697A27A18BC6C1C00534619 /* Pete Hodgson.png */,
+				D697A27B18BC6C1C00534619 /* Peter Kananen.png */,
+				D697A27C18BC6C1C00534619 /* Randy Beiter.png */,
+				D697A27D18BC6C1C00534619 /* Ray Wenderlich.png */,
+				D697A27E18BC6C1C00534619 /* Rene Cacheaux.png */,
+				D697A27F18BC6C1C00534619 /* Rene Cacheaux@2x.png */,
+				D697A28018BC6C1C00534619 /* Rob Napier.png */,
+				D697A28118BC6C1C00534619 /* Rob Napier@2x.png */,
+				D697A28218BC6C1C00534619 /* Saul Mora.png */,
+				D697A28318BC6C1C00534619 /* Scott McAlister.png */,
+				D697A28418BC6C1C00534619 /* Scott McAlister@2x.png */,
+				D697A28518BC6C1C00534619 /* Sean McMains.png */,
+				D697A28618BC6C1C00534619 /* Sean McMains@2x.png */,
+				D697A28718BC6C1C00534619 /* Step Christopher.png */,
+				D697A28818BC6C1C00534619 /* Steve Madsen.png */,
+				D697A28918BC6C1C00534619 /* Tim Burks.png */,
+				D697A28A18BC6C1C00534619 /* TJ Usiyan.png */,
+				D697A28B18BC6C1C00534619 /* Walter Tyree.png */,
+				D697A28C18BC6C1C00534619 /* Whitney Young.png */,
+				D697A28D18BC6C1C00534619 /* Wood-Planks.png */,
+				D697A28E18BC6C1C00534619 /* Wood-Planks@2x.png */,
+				D697A20C18BC5C7600534619 /* open_shelf_new.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D696298E18BC49B60004C7D2 /* CollectionViewOverlflow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D69629C118BC49B70004C7D2 /* Build configuration list for PBXNativeTarget "CollectionViewOverlflow" */;
+			buildPhases = (
+				D696298B18BC49B60004C7D2 /* Sources */,
+				D696298C18BC49B60004C7D2 /* Frameworks */,
+				D696298D18BC49B60004C7D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CollectionViewOverlflow;
+			productName = CollectionViewOverlflow;
+			productReference = D696298F18BC49B60004C7D2 /* CollectionViewOverlflow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D69629AF18BC49B70004C7D2 /* CollectionViewOverlflowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D69629C418BC49B70004C7D2 /* Build configuration list for PBXNativeTarget "CollectionViewOverlflowTests" */;
+			buildPhases = (
+				D69629AC18BC49B70004C7D2 /* Sources */,
+				D69629AD18BC49B70004C7D2 /* Frameworks */,
+				D69629AE18BC49B70004C7D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D69629B618BC49B70004C7D2 /* PBXTargetDependency */,
+			);
+			name = CollectionViewOverlflowTests;
+			productName = CollectionViewOverlflowTests;
+			productReference = D69629B018BC49B70004C7D2 /* CollectionViewOverlflowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D696298718BC49B60004C7D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = kiwitech;
+				TargetAttributes = {
+					D69629AF18BC49B70004C7D2 = {
+						TestTargetID = D696298E18BC49B60004C7D2;
+					};
+				};
+			};
+			buildConfigurationList = D696298A18BC49B60004C7D2 /* Build configuration list for PBXProject "CollectionViewOverlflow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D696298618BC49B50004C7D2;
+			productRefGroup = D696299018BC49B60004C7D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D696298E18BC49B60004C7D2 /* CollectionViewOverlflow */,
+				D69629AF18BC49B70004C7D2 /* CollectionViewOverlflowTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D696298D18BC49B60004C7D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D697A2F318BC6C1D00534619 /* Nathan Eror.png in Resources */,
+				D697A30918BC6C1D00534619 /* Wood-Planks@2x.png in Resources */,
+				D69629AB18BC49B60004C7D2 /* Images.xcassets in Resources */,
+				D697A2BF18BC6C1D00534619 /* Jack Cox.png in Resources */,
+				D697A2C618BC6C1D00534619 /* Jason Felice.png in Resources */,
+				D697A2E518BC6C1D00534619 /* Marcus Zarra@2x.png in Resources */,
+				D697A2EF18BC6C1D00534619 /* Michael Simmons@2x.png in Resources */,
+				D697A30318BC6C1D00534619 /* Steve Madsen.png in Resources */,
+				D697A2E118BC6C1D00534619 /* Mac Liaw.png in Resources */,
+				D697A2CA18BC6C1D00534619 /* Jeff Kelley.png in Resources */,
+				D697A2E618BC6C1D00534619 /* Mark Dalrymple.png in Resources */,
+				D697A29018BC6C1C00534619 /* Aaron Hillegass.png in Resources */,
+				D697A2DA18BC6C1D00534619 /* Kevin Conner.png in Resources */,
+				D697A29318BC6C1C00534619 /* Ameir Al-Zoubi.png in Resources */,
+				D697A2F518BC6C1D00534619 /* Pete Hodgson.png in Resources */,
+				D697A2F718BC6C1D00534619 /* Randy Beiter.png in Resources */,
+				D697A2C818BC6C1D00534619 /* Jay Thrash.png in Resources */,
+				D697A2B518BC6C1D00534619 /* Dave Koziol.png in Resources */,
+				D697A2B318BC6C1D00534619 /* Daniel Pasco@2x.png in Resources */,
+				D697A2CC18BC6C1D00534619 /* Jonathan Blocksom.png in Resources */,
+				D697A29A18BC6C1D00534619 /* Ben Scheirman.png in Resources */,
+				D697A2CF18BC6C1D00534619 /* Jonathan Saggau.png in Resources */,
+				D697A2BD18BC6C1D00534619 /* Geoff Goetz.png in Resources */,
+				D697A2B918BC6C1D00534619 /* Default@2x.png in Resources */,
+				D697A30818BC6C1D00534619 /* Wood-Planks.png in Resources */,
+				D697A2D218BC6C1D00534619 /* Josh Johnson.png in Resources */,
+				D697A2A018BC6C1D00534619 /* Brad Larson.png in Resources */,
+				D697A2C318BC6C1D00534619 /* James Dempsey@2x.png in Resources */,
+				D697A2DD18BC6C1D00534619 /* Kevin Kim.png in Resources */,
+				D697A2A518BC6C1D00534619 /* Brittany Tarvin.png in Resources */,
+				D697A30518BC6C1D00534619 /* TJ Usiyan.png in Resources */,
+				D697A2A218BC6C1D00534619 /* Brent Simmons.png in Resources */,
+				D697A2F818BC6C1D00534619 /* Ray Wenderlich.png in Resources */,
+				D697A30718BC6C1D00534619 /* Whitney Young.png in Resources */,
+				D697A2B018BC6C1D00534619 /* Conrad Stoll@2x.png in Resources */,
+				D697A2EC18BC6C1D00534619 /* Mattieu Gamache-Asselin.png in Resources */,
+				D697A2AD18BC6C1D00534619 /* Chris Risner.png in Resources */,
+				D697A2F118BC6C1D00534619 /* Michele Titolo@2x.png in Resources */,
+				D697A2A618BC6C1D00534619 /* Cesare Rocchi.png in Resources */,
+				D697A2D818BC6C1D00534619 /* Ken Auer.png in Resources */,
+				D697A29E18BC6C1D00534619 /* Bob McCune@2x.png in Resources */,
+				D697A2C118BC6C1D00534619 /* Jaimee Newberry@2x.png in Resources */,
+				D697A2F218BC6C1D00534619 /* Mike Ash.png in Resources */,
+				D697A2E918BC6C1D00534619 /* Mark Pospesel@2x.png in Resources */,
+				D697A2B818BC6C1D00534619 /* Default.png in Resources */,
+				D697A2A718BC6C1D00534619 /* Cesare Rocchi@2x.png in Resources */,
+				D697A30618BC6C1D00534619 /* Walter Tyree.png in Resources */,
+				D697A2BB18BC6C1D00534619 /* Elizabeth Taylor.png in Resources */,
+				D697A30018BC6C1D00534619 /* Sean McMains.png in Resources */,
+				D697A2C018BC6C1D00534619 /* Jaimee Newberry.png in Resources */,
+				D697A29D18BC6C1D00534619 /* Bob McCune.png in Resources */,
+				D697A2AC18BC6C1D00534619 /* Chris Judd.png in Resources */,
+				D697A2D418BC6C1D00534619 /* Josh Smith.png in Resources */,
+				D697A2D018BC6C1D00534619 /* Josh Abernathy.png in Resources */,
+				D697A2AB18BC6C1D00534619 /* Chris Adamson.png in Resources */,
+				D697A20D18BC5C7600534619 /* open_shelf_new.png in Resources */,
+				D697A29518BC6C1C00534619 /* Andria Jensen.png in Resources */,
+				D697A2E018BC6C1D00534619 /* Kyle Richter@2x.png in Resources */,
+				D697A2D318BC6C1D00534619 /* Josh Nozzi.png in Resources */,
+				D697A2A818BC6C1D00534619 /* Chad Sellers.png in Resources */,
+				D697A2FF18BC6C1D00534619 /* Scott McAlister@2x.png in Resources */,
+				D697A28F18BC6C1C00534619 /* Aaron Douglas.png in Resources */,
+				D697A32518BC6D1300534619 /* open_shelf_new@2x.png in Resources */,
+				D697A2E718BC6C1D00534619 /* Mark Gilicinski.png in Resources */,
+				D697A2E818BC6C1D00534619 /* Mark Pospesel.png in Resources */,
+				D697A29218BC6C1C00534619 /* Aged-Paper@2x.png in Resources */,
+				D696299D18BC49B60004C7D2 /* InfoPlist.strings in Resources */,
+				D697A2B618BC6C1D00534619 /* David Smith.png in Resources */,
+				D697A2D118BC6C1D00534619 /* Josh Abernathy@2x.png in Resources */,
+				D697A2C518BC6C1D00534619 /* Jared Richardson.png in Resources */,
+				D697A2E318BC6C1D00534619 /* Manton Reece@2x.png in Resources */,
+				D697A2B118BC6C1D00534619 /* Craig Castelaz.png in Resources */,
+				D697A30118BC6C1D00534619 /* Sean McMains@2x.png in Resources */,
+				D697A2B218BC6C1D00534619 /* Daniel Pasco.png in Resources */,
+				D697A2EB18BC6C1D00534619 /* Matt Drance@2x.png in Resources */,
+				D697A29C18BC6C1D00534619 /* Bill Dudney@2x.png in Resources */,
+				D697A2F418BC6C1D00534619 /* Patrick Burleson.png in Resources */,
+				D697A2DE18BC6C1D00534619 /* Kevin Munc.png in Resources */,
+				D697A2F018BC6C1D00534619 /* Michele Titolo.png in Resources */,
+				D697A2C918BC6C1D00534619 /* Jeff Biggus.png in Resources */,
+				D697A2BC18BC6C1D00534619 /* Eric Meyer.png in Resources */,
+				D697A2D518BC6C1D00534619 /* Josh Twist.png in Resources */,
+				D697A2D718BC6C1D00534619 /* Justin Miller@2x.png in Resources */,
+				D697A30418BC6C1D00534619 /* Tim Burks.png in Resources */,
+				D697A2A318BC6C1D00534619 /* Brent Simmons@2x.png in Resources */,
+				D697A2F618BC6C1D00534619 /* Peter Kananen.png in Resources */,
+				D697A29718BC6C1C00534619 /* Apple-Wood.png in Resources */,
+				D697A2AF18BC6C1D00534619 /* Conrad Stoll.png in Resources */,
+				D697A2EE18BC6C1D00534619 /* Michael Simmons.png in Resources */,
+				D697A2C718BC6C1D00534619 /* Jason Hunter.png in Resources */,
+				D697A2D918BC6C1D00534619 /* Ken Auer@2x.png in Resources */,
+				D697A2C418BC6C1D00534619 /* Janine Ohmer.png in Resources */,
+				D697A2A918BC6C1D00534619 /* Chad Sellers@2x.png in Resources */,
+				D697A2EA18BC6C1D00534619 /* Matt Drance.png in Resources */,
+				D697A29918BC6C1D00534619 /* Ben Lachman.png in Resources */,
+				D69629A618BC49B60004C7D2 /* Main.storyboard in Resources */,
+				D697A2FD18BC6C1D00534619 /* Saul Mora.png in Resources */,
+				D697A29B18BC6C1D00534619 /* Bill Dudney.png in Resources */,
+				D697A2D618BC6C1D00534619 /* Justin Miller.png in Resources */,
+				D697A2AA18BC6C1D00534619 /* Charles Perry.png in Resources */,
+				D697A2C218BC6C1D00534619 /* James Dempsey.png in Resources */,
+				D697A2E418BC6C1D00534619 /* Marcus Zarra.png in Resources */,
+				D697A2ED18BC6C1D00534619 /* Mattt Thompson.png in Resources */,
+				D697A2CD18BC6C1D00534619 /* Jonathan Lehr.png in Resources */,
+				D697A2BA18BC6C1D00534619 /* Doug Sjoquist.png in Resources */,
+				D697A2FA18BC6C1D00534619 /* Rene Cacheaux@2x.png in Resources */,
+				D697A29F18BC6C1D00534619 /* Boisy Pitre.png in Resources */,
+				D697A2DF18BC6C1D00534619 /* Kyle Richter.png in Resources */,
+				D697A2F918BC6C1D00534619 /* Rene Cacheaux.png in Resources */,
+				D697A2CB18BC6C1D00534619 /* Jeff LaMarche.png in Resources */,
+				D697A2FC18BC6C1D00534619 /* Rob Napier@2x.png in Resources */,
+				D697A2A118BC6C1D00534619 /* Brandon Alexander.png in Resources */,
+				D697A2B418BC6C1D00534619 /* Daniel Steinberg.png in Resources */,
+				D697A2E218BC6C1D00534619 /* Manton Reece.png in Resources */,
+				D697A2FE18BC6C1D00534619 /* Scott McAlister.png in Resources */,
+				D697A2FB18BC6C1D00534619 /* Rob Napier.png in Resources */,
+				D697A2B718BC6C1D00534619 /* Default-568h@2x.png in Resources */,
+				D697A2DC18BC6C1D00534619 /* Kevin Harwood@2x.png in Resources */,
+				D697A30218BC6C1D00534619 /* Step Christopher.png in Resources */,
+				D697A29818BC6C1D00534619 /* Apple-Wood@2x.png in Resources */,
+				D697A29118BC6C1C00534619 /* Aged-Paper.png in Resources */,
+				D697A29418BC6C1C00534619 /* Ameir Al-Zoubi@2x.png in Resources */,
+				D697A29618BC6C1C00534619 /* Andy Hunt.png in Resources */,
+				D697A2CE18BC6C1D00534619 /* Jonathan Penn.png in Resources */,
+				D697A2AE18BC6C1D00534619 /* Collin Donnell.png in Resources */,
+				D697A2A418BC6C1D00534619 /* Brian Coyner.png in Resources */,
+				D697A2BE18BC6C1D00534619 /* Heath Borders.png in Resources */,
+				D697A2DB18BC6C1D00534619 /* Kevin Harwood.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D69629AE18BC49B70004C7D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D69629BC18BC49B70004C7D2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D696298B18BC49B60004C7D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D697A21318BC69DE00534619 /* StoreBook.m in Sources */,
+				D69629A918BC49B60004C7D2 /* ViewController.m in Sources */,
+				D697A1F118BC5AE800534619 /* CustomLayout.m in Sources */,
+				D697A32918BC72F000534619 /* LXReorderableCollectionViewFlowLayout.m in Sources */,
+				D697A1EE18BC58C200534619 /* ShelfCollectionViewCell.m in Sources */,
+				D69629A318BC49B60004C7D2 /* AppDelegate.m in Sources */,
+				D696299F18BC49B60004C7D2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D69629AC18BC49B70004C7D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D69629BE18BC49B70004C7D2 /* CollectionViewOverlflowTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D69629B618BC49B70004C7D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D696298E18BC49B60004C7D2 /* CollectionViewOverlflow */;
+			targetProxy = D69629B518BC49B70004C7D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D696299B18BC49B60004C7D2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D696299C18BC49B60004C7D2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D69629A418BC49B60004C7D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D69629A518BC49B60004C7D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D69629BA18BC49B70004C7D2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D69629BB18BC49B70004C7D2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D69629BF18BC49B70004C7D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		D69629C018BC49B70004C7D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D69629C218BC49B70004C7D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CollectionViewOverlflow/CollectionViewOverlflow-Prefix.pch";
+				INFOPLIST_FILE = "CollectionViewOverlflow/CollectionViewOverlflow-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D69629C318BC49B70004C7D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CollectionViewOverlflow/CollectionViewOverlflow-Prefix.pch";
+				INFOPLIST_FILE = "CollectionViewOverlflow/CollectionViewOverlflow-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D69629C518BC49B70004C7D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CollectionViewOverlflow.app/CollectionViewOverlflow";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CollectionViewOverlflow/CollectionViewOverlflow-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CollectionViewOverlflowTests/CollectionViewOverlflowTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D69629C618BC49B70004C7D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CollectionViewOverlflow.app/CollectionViewOverlflow";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CollectionViewOverlflow/CollectionViewOverlflow-Prefix.pch";
+				INFOPLIST_FILE = "CollectionViewOverlflowTests/CollectionViewOverlflowTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D696298A18BC49B60004C7D2 /* Build configuration list for PBXProject "CollectionViewOverlflow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D69629BF18BC49B70004C7D2 /* Debug */,
+				D69629C018BC49B70004C7D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D69629C118BC49B70004C7D2 /* Build configuration list for PBXNativeTarget "CollectionViewOverlflow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D69629C218BC49B70004C7D2 /* Debug */,
+				D69629C318BC49B70004C7D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D69629C418BC49B70004C7D2 /* Build configuration list for PBXNativeTarget "CollectionViewOverlflowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D69629C518BC49B70004C7D2 /* Debug */,
+				D69629C618BC49B70004C7D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D696298718BC49B60004C7D2 /* Project object */;
+}
