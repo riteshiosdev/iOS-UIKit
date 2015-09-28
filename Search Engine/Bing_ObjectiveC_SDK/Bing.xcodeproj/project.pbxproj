@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C1666FE841158C02AAC07 /* InfoPlist.strings */; };
+		8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */; };
+		E25443E01045A811001DAF84 /* Bing.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443AE1045A811001DAF84 /* Bing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25443E11045A811001DAF84 /* Bing.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443AF1045A811001DAF84 /* Bing.m */; };
+		E25443E21045A811001DAF84 /* BingAsyncRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443B11045A811001DAF84 /* BingAsyncRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25443E31045A811001DAF84 /* BingAsyncRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443B21045A811001DAF84 /* BingAsyncRequest.m */; };
+		E25443E41045A811001DAF84 /* BingXMLDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443B31045A811001DAF84 /* BingXMLDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25443E51045A811001DAF84 /* BingXMLDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443B41045A811001DAF84 /* BingXMLDelegate.m */; };
+		E25443E61045A811001DAF84 /* BingBundleRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443B61045A811001DAF84 /* BingBundleRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25443E71045A811001DAF84 /* BingBundleRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443B71045A811001DAF84 /* BingBundleRequest.m */; };
+		E25443E81045A811001DAF84 /* BingImageRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443B81045A811001DAF84 /* BingImageRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25443E91045A811001DAF84 /* BingImageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443B91045A811001DAF84 /* BingImageRequest.m */; };
+		E25443EA1045A811001DAF84 /* BingNewsRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443BA1045A811001DAF84 /* BingNewsRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25443EB1045A811001DAF84 /* BingNewsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443BB1045A811001DAF84 /* BingNewsRequest.m */; };
+		E25443EC1045A811001DAF84 /* BingPhonebookRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443BC1045A811001DAF84 /* BingPhonebookRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25443ED1045A811001DAF84 /* BingPhonebookRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443BD1045A811001DAF84 /* BingPhonebookRequest.m */; };
+		E25443EE1045A811001DAF84 /* BingRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443BE1045A811001DAF84 /* BingRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25443EF1045A811001DAF84 /* BingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443BF1045A811001DAF84 /* BingRequest.m */; };
+		E25443F01045A811001DAF84 /* BingVideoRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443C01045A811001DAF84 /* BingVideoRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25443F11045A811001DAF84 /* BingVideoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443C11045A811001DAF84 /* BingVideoRequest.m */; };
+		E25443F21045A811001DAF84 /* BingWebRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443C21045A811001DAF84 /* BingWebRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25443F31045A811001DAF84 /* BingWebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443C31045A811001DAF84 /* BingWebRequest.m */; };
+		E25443F41045A811001DAF84 /* BingBundleResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443C51045A811001DAF84 /* BingBundleResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25443F51045A811001DAF84 /* BingBundleResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443C61045A811001DAF84 /* BingBundleResponse.m */; };
+		E25443F61045A811001DAF84 /* BingImageResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443C71045A811001DAF84 /* BingImageResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25443F71045A811001DAF84 /* BingImageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443C81045A811001DAF84 /* BingImageResponse.m */; };
+		E25443F81045A811001DAF84 /* BingNewsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443C91045A811001DAF84 /* BingNewsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25443F91045A811001DAF84 /* BingNewsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443CA1045A811001DAF84 /* BingNewsResponse.m */; };
+		E25443FA1045A811001DAF84 /* BingPhonebookResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443CB1045A811001DAF84 /* BingPhonebookResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25443FB1045A811001DAF84 /* BingPhonebookResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443CC1045A811001DAF84 /* BingPhonebookResponse.m */; };
+		E25443FC1045A811001DAF84 /* BingResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443CD1045A811001DAF84 /* BingResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25443FD1045A811001DAF84 /* BingResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443CE1045A811001DAF84 /* BingResponse.m */; };
+		E25443FE1045A811001DAF84 /* BingVideoResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443CF1045A811001DAF84 /* BingVideoResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25443FF1045A811001DAF84 /* BingVideoResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443D01045A811001DAF84 /* BingVideoResponse.m */; };
+		E25444001045A811001DAF84 /* BingWebResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443D11045A811001DAF84 /* BingWebResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25444011045A811001DAF84 /* BingWebResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443D21045A811001DAF84 /* BingWebResponse.m */; };
+		E25444021045A811001DAF84 /* BingImageResult.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443D41045A811001DAF84 /* BingImageResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25444031045A811001DAF84 /* BingImageResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443D51045A811001DAF84 /* BingImageResult.m */; };
+		E25444041045A811001DAF84 /* BingNewsResult.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443D61045A811001DAF84 /* BingNewsResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25444051045A811001DAF84 /* BingNewsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443D71045A811001DAF84 /* BingNewsResult.m */; };
+		E25444061045A811001DAF84 /* BingPhonebookResult.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443D81045A811001DAF84 /* BingPhonebookResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25444071045A811001DAF84 /* BingPhonebookResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443D91045A811001DAF84 /* BingPhonebookResult.m */; };
+		E25444081045A811001DAF84 /* BingResult.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443DA1045A811001DAF84 /* BingResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E25444091045A811001DAF84 /* BingResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443DB1045A811001DAF84 /* BingResult.m */; };
+		E254440A1045A811001DAF84 /* BingVideoResult.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443DC1045A811001DAF84 /* BingVideoResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E254440B1045A811001DAF84 /* BingVideoResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443DD1045A811001DAF84 /* BingVideoResult.m */; };
+		E254440C1045A811001DAF84 /* BingWebResult.h in Headers */ = {isa = PBXBuildFile; fileRef = E25443DE1045A811001DAF84 /* BingWebResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E254440D1045A811001DAF84 /* BingWebResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E25443DF1045A811001DAF84 /* BingWebResult.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0867D69BFE84028FC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		0867D6A5FE840307C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		089C1667FE841158C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF5E0370ADEE00C91783 /* Bing_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bing_Prefix.pch; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC2EF5B0486A6940098B216 /* Bing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F7E79907B2D74100F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		E25443AE1045A811001DAF84 /* Bing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bing.h; sourceTree = "<group>"; };
+		E25443AF1045A811001DAF84 /* Bing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bing.m; sourceTree = "<group>"; };
+		E25443B11045A811001DAF84 /* BingAsyncRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingAsyncRequest.h; sourceTree = "<group>"; };
+		E25443B21045A811001DAF84 /* BingAsyncRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingAsyncRequest.m; sourceTree = "<group>"; };
+		E25443B31045A811001DAF84 /* BingXMLDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingXMLDelegate.h; sourceTree = "<group>"; };
+		E25443B41045A811001DAF84 /* BingXMLDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingXMLDelegate.m; sourceTree = "<group>"; };
+		E25443B61045A811001DAF84 /* BingBundleRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingBundleRequest.h; sourceTree = "<group>"; };
+		E25443B71045A811001DAF84 /* BingBundleRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingBundleRequest.m; sourceTree = "<group>"; };
+		E25443B81045A811001DAF84 /* BingImageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingImageRequest.h; sourceTree = "<group>"; };
+		E25443B91045A811001DAF84 /* BingImageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingImageRequest.m; sourceTree = "<group>"; };
+		E25443BA1045A811001DAF84 /* BingNewsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingNewsRequest.h; sourceTree = "<group>"; };
+		E25443BB1045A811001DAF84 /* BingNewsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingNewsRequest.m; sourceTree = "<group>"; };
+		E25443BC1045A811001DAF84 /* BingPhonebookRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingPhonebookRequest.h; sourceTree = "<group>"; };
+		E25443BD1045A811001DAF84 /* BingPhonebookRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingPhonebookRequest.m; sourceTree = "<group>"; };
+		E25443BE1045A811001DAF84 /* BingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingRequest.h; sourceTree = "<group>"; };
+		E25443BF1045A811001DAF84 /* BingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingRequest.m; sourceTree = "<group>"; };
+		E25443C01045A811001DAF84 /* BingVideoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingVideoRequest.h; sourceTree = "<group>"; };
+		E25443C11045A811001DAF84 /* BingVideoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingVideoRequest.m; sourceTree = "<group>"; };
+		E25443C21045A811001DAF84 /* BingWebRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingWebRequest.h; sourceTree = "<group>"; };
+		E25443C31045A811001DAF84 /* BingWebRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingWebRequest.m; sourceTree = "<group>"; };
+		E25443C51045A811001DAF84 /* BingBundleResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingBundleResponse.h; sourceTree = "<group>"; };
+		E25443C61045A811001DAF84 /* BingBundleResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingBundleResponse.m; sourceTree = "<group>"; };
+		E25443C71045A811001DAF84 /* BingImageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingImageResponse.h; sourceTree = "<group>"; };
+		E25443C81045A811001DAF84 /* BingImageResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingImageResponse.m; sourceTree = "<group>"; };
+		E25443C91045A811001DAF84 /* BingNewsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingNewsResponse.h; sourceTree = "<group>"; };
+		E25443CA1045A811001DAF84 /* BingNewsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingNewsResponse.m; sourceTree = "<group>"; };
+		E25443CB1045A811001DAF84 /* BingPhonebookResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingPhonebookResponse.h; sourceTree = "<group>"; };
+		E25443CC1045A811001DAF84 /* BingPhonebookResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingPhonebookResponse.m; sourceTree = "<group>"; };
+		E25443CD1045A811001DAF84 /* BingResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingResponse.h; sourceTree = "<group>"; };
+		E25443CE1045A811001DAF84 /* BingResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingResponse.m; sourceTree = "<group>"; };
+		E25443CF1045A811001DAF84 /* BingVideoResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingVideoResponse.h; sourceTree = "<group>"; };
+		E25443D01045A811001DAF84 /* BingVideoResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingVideoResponse.m; sourceTree = "<group>"; };
+		E25443D11045A811001DAF84 /* BingWebResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingWebResponse.h; sourceTree = "<group>"; };
+		E25443D21045A811001DAF84 /* BingWebResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingWebResponse.m; sourceTree = "<group>"; };
+		E25443D41045A811001DAF84 /* BingImageResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingImageResult.h; sourceTree = "<group>"; };
+		E25443D51045A811001DAF84 /* BingImageResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingImageResult.m; sourceTree = "<group>"; };
+		E25443D61045A811001DAF84 /* BingNewsResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingNewsResult.h; sourceTree = "<group>"; };
+		E25443D71045A811001DAF84 /* BingNewsResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingNewsResult.m; sourceTree = "<group>"; };
+		E25443D81045A811001DAF84 /* BingPhonebookResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingPhonebookResult.h; sourceTree = "<group>"; };
+		E25443D91045A811001DAF84 /* BingPhonebookResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingPhonebookResult.m; sourceTree = "<group>"; };
+		E25443DA1045A811001DAF84 /* BingResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingResult.h; sourceTree = "<group>"; };
+		E25443DB1045A811001DAF84 /* BingResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingResult.m; sourceTree = "<group>"; };
+		E25443DC1045A811001DAF84 /* BingVideoResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingVideoResult.h; sourceTree = "<group>"; };
+		E25443DD1045A811001DAF84 /* BingVideoResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingVideoResult.m; sourceTree = "<group>"; };
+		E25443DE1045A811001DAF84 /* BingWebResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BingWebResult.h; sourceTree = "<group>"; };
+		E25443DF1045A811001DAF84 /* BingWebResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BingWebResult.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC2EF560486A6940098B216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF570486A6940098B216 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5B0486A6940098B216 /* Bing.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* Bing */ = {
+			isa = PBXGroup;
+			children = (
+				E25443AD1045A811001DAF84 /* Bing */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = Bing;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */,
+				1058C7B2FEA5585E11CA2CBB /* Other Frameworks */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+				089C1666FE841158C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1058C7B0FEA5585E11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7B1FEA5585E11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7B2FEA5585E11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0867D6A5FE840307C02AAC07 /* AppKit.framework */,
+				D2F7E79907B2D74100F64583 /* CoreData.framework */,
+				0867D69BFE84028FC02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* Bing_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		E25443AD1045A811001DAF84 /* Bing */ = {
+			isa = PBXGroup;
+			children = (
+				E25443AE1045A811001DAF84 /* Bing.h */,
+				E25443AF1045A811001DAF84 /* Bing.m */,
+				E25443B01045A811001DAF84 /* Common */,
+				E25443B51045A811001DAF84 /* Requests */,
+				E25443C41045A811001DAF84 /* Responses */,
+				E25443D31045A811001DAF84 /* Results */,
+			);
+			path = Bing;
+			sourceTree = "<group>";
+		};
+		E25443B01045A811001DAF84 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E25443B11045A811001DAF84 /* BingAsyncRequest.h */,
+				E25443B21045A811001DAF84 /* BingAsyncRequest.m */,
+				E25443B31045A811001DAF84 /* BingXMLDelegate.h */,
+				E25443B41045A811001DAF84 /* BingXMLDelegate.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E25443B51045A811001DAF84 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				E25443B61045A811001DAF84 /* BingBundleRequest.h */,
+				E25443B71045A811001DAF84 /* BingBundleRequest.m */,
+				E25443B81045A811001DAF84 /* BingImageRequest.h */,
+				E25443B91045A811001DAF84 /* BingImageRequest.m */,
+				E25443BA1045A811001DAF84 /* BingNewsRequest.h */,
+				E25443BB1045A811001DAF84 /* BingNewsRequest.m */,
+				E25443BC1045A811001DAF84 /* BingPhonebookRequest.h */,
+				E25443BD1045A811001DAF84 /* BingPhonebookRequest.m */,
+				E25443BE1045A811001DAF84 /* BingRequest.h */,
+				E25443BF1045A811001DAF84 /* BingRequest.m */,
+				E25443C01045A811001DAF84 /* BingVideoRequest.h */,
+				E25443C11045A811001DAF84 /* BingVideoRequest.m */,
+				E25443C21045A811001DAF84 /* BingWebRequest.h */,
+				E25443C31045A811001DAF84 /* BingWebRequest.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		E25443C41045A811001DAF84 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				E25443C51045A811001DAF84 /* BingBundleResponse.h */,
+				E25443C61045A811001DAF84 /* BingBundleResponse.m */,
+				E25443C71045A811001DAF84 /* BingImageResponse.h */,
+				E25443C81045A811001DAF84 /* BingImageResponse.m */,
+				E25443C91045A811001DAF84 /* BingNewsResponse.h */,
+				E25443CA1045A811001DAF84 /* BingNewsResponse.m */,
+				E25443CB1045A811001DAF84 /* BingPhonebookResponse.h */,
+				E25443CC1045A811001DAF84 /* BingPhonebookResponse.m */,
+				E25443CD1045A811001DAF84 /* BingResponse.h */,
+				E25443CE1045A811001DAF84 /* BingResponse.m */,
+				E25443CF1045A811001DAF84 /* BingVideoResponse.h */,
+				E25443D01045A811001DAF84 /* BingVideoResponse.m */,
+				E25443D11045A811001DAF84 /* BingWebResponse.h */,
+				E25443D21045A811001DAF84 /* BingWebResponse.m */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		E25443D31045A811001DAF84 /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				E25443D41045A811001DAF84 /* BingImageResult.h */,
+				E25443D51045A811001DAF84 /* BingImageResult.m */,
+				E25443D61045A811001DAF84 /* BingNewsResult.h */,
+				E25443D71045A811001DAF84 /* BingNewsResult.m */,
+				E25443D81045A811001DAF84 /* BingPhonebookResult.h */,
+				E25443D91045A811001DAF84 /* BingPhonebookResult.m */,
+				E25443DA1045A811001DAF84 /* BingResult.h */,
+				E25443DB1045A811001DAF84 /* BingResult.m */,
+				E25443DC1045A811001DAF84 /* BingVideoResult.h */,
+				E25443DD1045A811001DAF84 /* BingVideoResult.m */,
+				E25443DE1045A811001DAF84 /* BingWebResult.h */,
+				E25443DF1045A811001DAF84 /* BingWebResult.m */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8DC2EF500486A6940098B216 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25443E01045A811001DAF84 /* Bing.h in Headers */,
+				E25443E21045A811001DAF84 /* BingAsyncRequest.h in Headers */,
+				E25443E41045A811001DAF84 /* BingXMLDelegate.h in Headers */,
+				E25443E61045A811001DAF84 /* BingBundleRequest.h in Headers */,
+				E25443E81045A811001DAF84 /* BingImageRequest.h in Headers */,
+				E25443EA1045A811001DAF84 /* BingNewsRequest.h in Headers */,
+				E25443EC1045A811001DAF84 /* BingPhonebookRequest.h in Headers */,
+				E25443EE1045A811001DAF84 /* BingRequest.h in Headers */,
+				E25443F01045A811001DAF84 /* BingVideoRequest.h in Headers */,
+				E25443F21045A811001DAF84 /* BingWebRequest.h in Headers */,
+				E25443F41045A811001DAF84 /* BingBundleResponse.h in Headers */,
+				E25443F61045A811001DAF84 /* BingImageResponse.h in Headers */,
+				E25443F81045A811001DAF84 /* BingNewsResponse.h in Headers */,
+				E25443FA1045A811001DAF84 /* BingPhonebookResponse.h in Headers */,
+				E25443FC1045A811001DAF84 /* BingResponse.h in Headers */,
+				E25443FE1045A811001DAF84 /* BingVideoResponse.h in Headers */,
+				E25444001045A811001DAF84 /* BingWebResponse.h in Headers */,
+				E25444021045A811001DAF84 /* BingImageResult.h in Headers */,
+				E25444041045A811001DAF84 /* BingNewsResult.h in Headers */,
+				E25444061045A811001DAF84 /* BingPhonebookResult.h in Headers */,
+				E25444081045A811001DAF84 /* BingResult.h in Headers */,
+				E254440A1045A811001DAF84 /* BingVideoResult.h in Headers */,
+				E254440C1045A811001DAF84 /* BingWebResult.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8DC2EF4F0486A6940098B216 /* Bing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "Bing" */;
+			buildPhases = (
+				8DC2EF500486A6940098B216 /* Headers */,
+				8DC2EF520486A6940098B216 /* Resources */,
+				8DC2EF540486A6940098B216 /* Sources */,
+				8DC2EF560486A6940098B216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bing;
+			productInstallPath = "$(HOME)/Library/Frameworks";
+			productName = Bing;
+			productReference = 8DC2EF5B0486A6940098B216 /* Bing.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "Bing" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* Bing */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC2EF4F0486A6940098B216 /* Bing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC2EF520486A6940098B216 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC2EF530486A6940098B216 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC2EF540486A6940098B216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25443E11045A811001DAF84 /* Bing.m in Sources */,
+				E25443E31045A811001DAF84 /* BingAsyncRequest.m in Sources */,
+				E25443E51045A811001DAF84 /* BingXMLDelegate.m in Sources */,
+				E25443E71045A811001DAF84 /* BingBundleRequest.m in Sources */,
+				E25443E91045A811001DAF84 /* BingImageRequest.m in Sources */,
+				E25443EB1045A811001DAF84 /* BingNewsRequest.m in Sources */,
+				E25443ED1045A811001DAF84 /* BingPhonebookRequest.m in Sources */,
+				E25443EF1045A811001DAF84 /* BingRequest.m in Sources */,
+				E25443F11045A811001DAF84 /* BingVideoRequest.m in Sources */,
+				E25443F31045A811001DAF84 /* BingWebRequest.m in Sources */,
+				E25443F51045A811001DAF84 /* BingBundleResponse.m in Sources */,
+				E25443F71045A811001DAF84 /* BingImageResponse.m in Sources */,
+				E25443F91045A811001DAF84 /* BingNewsResponse.m in Sources */,
+				E25443FB1045A811001DAF84 /* BingPhonebookResponse.m in Sources */,
+				E25443FD1045A811001DAF84 /* BingResponse.m in Sources */,
+				E25443FF1045A811001DAF84 /* BingVideoResponse.m in Sources */,
+				E25444011045A811001DAF84 /* BingWebResponse.m in Sources */,
+				E25444031045A811001DAF84 /* BingImageResult.m in Sources */,
+				E25444051045A811001DAF84 /* BingNewsResult.m in Sources */,
+				E25444071045A811001DAF84 /* BingPhonebookResult.m in Sources */,
+				E25444091045A811001DAF84 /* BingResult.m in Sources */,
+				E254440B1045A811001DAF84 /* BingVideoResult.m in Sources */,
+				E254440D1045A811001DAF84 /* BingWebResult.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C1666FE841158C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C1667FE841158C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91AE08733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Bing_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@loader_path/../Frameworks";
+				OTHER_CFLAGS = "-DBING_DEBUG=1";
+				PRODUCT_NAME = Bing;
+				SDKROOT = "";
+				STRIP_STYLE = "non-global";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1DEB91AF08733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Bing_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "@loader_path/../Frameworks";
+				OTHER_CFLAGS = "";
+				PRODUCT_NAME = Bing;
+				SDKROOT = "";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91AD08733DA50010E9CD /* Build configuration list for PBXNativeTarget "Bing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91AE08733DA50010E9CD /* Debug */,
+				1DEB91AF08733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "Bing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
